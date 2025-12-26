@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Space Grotesk', sans-serif; 
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+p {
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+/*--------------------HEADER--------------------*/
+
+.logo {
+  width: 150px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 5%;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 9999;
+}
+
+nav a {
+  color: black;
+  padding: 15px;
+}
+
+nav a:hover {
+  background-color: #524bd2;
+  color: white;
+}
+
+
+.btn {
+  background-color: #524bd2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 75%;
+}
+
+/*--------------------HEADER--------------------*/
+
+.title {
+  text-align: center;
+  padding: 15px;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.row {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 250px;
+  padding: 15px;
+  margin: 10px;
+}
+
+/*--------------------HERO--------------------*/
+
+.hero {
+  background-image: url(../images/Rectangle\ 1\ copy.png);
+  background-color: #00071f;
+  background-size: cover;
+  min-height: 92vh;
+  place-content: center;
+  color: white;
+}
+
+
+.hero h1 {
+  font-size:120px;
+  margin: 5px;
+  line-height: 120px;
+}
+
+
+.hero p {
+  line-height: 32px;
+  font-size:29px;
+  margin-top: 17px;
+  margin-bottom: 33px;
+}
+
+.hero .col{
+  text-align: center;
+}
+
+span {
+  color: #948ff5;
+}
+
+/*--------------------ABOUT--------------------*/
+
+
+/*--------------------BANNER--------------------*/
+
+
+
+/*--------------------SERVICES--------------------*/
+
+.service .row{
+  text-align: center;
+}
+
+
+/*--------------------SCROLL--------------------*/
+
+
+
+/*--------------------TESTIMONIALS--------------------*/
+
+/* SCROLLING WRAPPER */
+        .marquee {
+            overflow: hidden;
+            white-space: nowrap; 
+            width: 100%;
+        }
+
+        .track {
+            display: inline-flex;
+            gap: 40px;
+            animation: scroll 40s linear infinite;
+            padding: 50px 0; 
+        }
+
+        /* CARD STYLING (DESKTOP DEFAULT) */
+        .card {
+            width: 600px; 
+            background: transparent; 
+            display: flex; 
+            flex-direction: row; /* Image Left, Text Right */
+            align-items: center;
+            gap: 25px;
+            white-space: normal; 
+            flex-shrink: 0; 
+        }
+
+        /* LEFT SIDE: IMAGE */
+        .card-img {
+            width: 180px;
+            height: 180px;
+            flex-shrink: 0; 
+            border-radius: 40px; 
+            border: 8px solid white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* RIGHT SIDE: TEXT */
+        .card-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .name {
+            font-size: 32px;
+            font-weight: 700; /* Bold for Space Grotesk */
+            text-transform: uppercase;
+            margin: 0;
+            color: #000;
+            line-height: 1;
+        }
+
+        .university {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 5px 0 15px 0;
+            color: #000;
+            letter-spacing: 0.5px;
+        }
+
+        .quote {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #222;
+            margin: 0;
+            font-weight: 400;
+        }
+
+        /* ANIMATION */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-20%); }
+        }
+
+        .marquee:hover .track { animation-play-state: ; }
+
+        /* ---------------------------------------------------- */
+        /* RESPONSIVE MEDIA QUERY (MOBILE & TABLET)             */
+        /* ---------------------------------------------------- */
+        @media (max-width: 768px) {
+            .card {
+                width: 300px; /* Smaller width for mobile */
+                flex-direction: column; /* STACKS IMAGE TOP, TEXT BOTTOM */
+                text-align: center; /* Centers text */
+                gap: px;
+                padding: 0 10px;
+            }
+
+            .track {
+                gap: 0px; /* Reduced gap between cards */
+            }
+
+            .card-img {
+                width: 140px; /* Slightly smaller image */
+                height: 140px;
+                margin: 0 auto; /* Centers image */
+            }
+
+            .name { font-size: 24px; }
+            .university { font-size: 14px; margin-bottom: 10px; }
+            .quote { font-size: 14px; }
+        }
+
+/*--------------------form--------------------*/
+
+
+
+
+        /* --- SECTION 2: FOOTER (Dark Background) --- */
+        .site-footer {
+          
+            position: relative; /* Vital for positioning the banner */
+
+            
+        }
+
+
+
+        /* --- THE BANNER (The Overlapping Element) --- */
+        .contact-banner {
+            background-color: #554AF0;
+            color: white;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 24px;
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(85, 74, 240, 0.3);
+            box-sizing: border-box;
+            
+            /* THIS IS THE MAGIC POSITIONING CODE */
+            position: absolute; 
+            top: 0; 
+            left: 50%;
+            transform: translate(-50%, -50%); /* Moves it up half its height and centers it */
+            z-index: 10;
+        }
+
+        .banner-content h2 {
+            margin: 0 0 10px 0;
+            font-size: 28px;
+        }
+
+        .banner-content p {
+            margin: 0;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .banner-action {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 250px;
+        }
+
+        .enquiry-btn {
+            background-color: #1F1B36;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            font-size: 20px;
+            font-weight: 500;
+            border-radius: 50px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .time-note {
+            font-size: 13px;
+            margin-top: 10px;
+            opacity: 0.7;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .contact-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px 20px;
+                width: 85%;
+            }
+        }
+
+
+/*--------------------CONTACT--------------------*/
+
+.contact{
+  color: white;
+  background-color: #111827;
+}
+
+.contact a{
+  color: white;
+  display: block;
+  padding-bottom: 10px;
+}
+
+/*--------------------FOOTER--------------------*/
+footer  {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1c273f;
+    background-color: #111827;
+    color: #e7e7e7;
+}
